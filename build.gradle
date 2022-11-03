@@ -1,0 +1,96 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'de.undercouch.download' version '4.1.1'
+}
+
+javafx {
+    version '11.0.2'
+    modules = ['javafx.controls']
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+/* Aufgabe 1.1 */
+dependencies {
+    implementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+}
+
+/* Aufgabe 1.2 (+ Teile von Aufgabe 1.4) */
+task buildCore(dependsOn: "copyJson") {
+    doLast {
+        sourceSets {
+            main {
+                java {
+                    srcDir 'src/main/java'
+                    exclude '**/ui/*.java'
+                }
+            }
+        }
+    }
+    finalizedBy(build)
+}
+
+task buildUI(dependsOn: "copyJson") {
+    doLast {
+        sourceSets {
+            main {
+                java {
+                    srcDir 'src/main/java'
+                }
+            }
+        }
+    }
+    finalizedBy(build)
+}
+
+/* Aufgabe 1.3 */
+task runCore(dependsOn: buildCore) {
+    doLast {
+        mainClassName = 'de.unitrier.st.core.Main'
+    }
+
+    finalizedBy(run)
+}
+
+task runUI(dependsOn: buildUI) {
+    doLast {
+        mainClassName = 'de.unitrier.st.ui.Ui'
+    }
+
+    finalizedBy(run)
+}
+
+/* Aufgabe 1.4 */
+task downloadZip(type: Download, dependsOn: clean) {
+
+    src 'https://datahub.io/core/covid-19/r/covid-19_zip.zip'
+    dest buildDir
+    onlyIfModified true
+}
+
+task unZip(type: Copy, dependsOn: downloadZip) {
+
+    def oldLocation = file("${buildDir}/covid-19_zip.zip")
+    def newLocation = file("${buildDir}/covid-19_zip")
+    from zipTree(oldLocation)
+    into newLocation
+}
+
+task copyJson(type: Copy, dependsOn: unZip) {
+
+    def oldLocation = file("${buildDir}/covid-19_zip/data/countries-aggregated_json.json")
+    def newLocation = file("src/main/resources")
+    from oldLocation
+    into newLocation
+}

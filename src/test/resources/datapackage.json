@@ -1,0 +1,1676 @@
+{
+  "bytes": 1466736964,
+  "datahub": {
+    "created": "2020-03-22T16:03:58.514457",
+    "findability": "published",
+    "flowid": "core/covid-19/1052",
+    "modified": "2022-01-25T06:21:33.115503",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "b9eefe06eb823ec6f692a114ecf1121b",
+  "id": "core/covid-19",
+  "licenses": [
+    {
+      "name": "ODC-PDDL",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "name": "covid-19",
+  "resources": [
+    {
+      "bytes": 4902736,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/0c89569a53f7f104c4b2197575713a8d.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "countries-aggregated_original",
+      "path": "archive/countries-aggregated.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 50935,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/3165e494399c2f403ccf6c988305ed58.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "key-countries-pivoted_original",
+      "path": "archive/key-countries-pivoted.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "China",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "US",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "United_Kingdom",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Italy",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "France",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Germany",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Spain",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Iran",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 7588016,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/fa48253ddd3d1a34fc1ebfc6c0874a64.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "time-series-19-covid-combined_original",
+      "path": "archive/time-series-19-covid-combined.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 408192,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/ceb5bc93981e8646491f398c80a69db0.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "reference_original",
+      "path": "archive/reference.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FIPS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province_State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country_Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Long_",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 86960673,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/ace6e3abd889cab509f7c3b131bbceaa.csv",
+      "encoding": "ISO-8859-9",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "us_confirmed_original",
+      "path": "archive/us_confirmed.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Case",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 83530023,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/71c6e2dd3d43674708aa3202a7db2333.csv",
+      "encoding": "ISO-8859-9",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "us_deaths_original",
+      "path": "archive/us_deaths.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Case",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 39262,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/bc1f9fb1355cd88a89af1350aaa6d65a.csv",
+      "encoding": "ISO-8859-2",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "worldwide-aggregate_original",
+      "path": "archive/worldwide-aggregate.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Increase rate",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 93765352,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/1435d8a7e14de1fca5ce11b1db383515.csv",
+      "encoding": "ISO-8859-9",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "us_simplified_original",
+      "path": "archive/us_simplified.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 4822,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/validation_report/data/f4be1a213533d3a2fefa4d9ceb374916/validation_report.json",
+      "format": "json",
+      "hash": "f4be1a213533d3a2fefa4d9ceb374916",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 5046405,
+      "datahub": {
+        "derivedFrom": [
+          "countries-aggregated"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/countries-aggregated_csv/data/0c89569a53f7f104c4b2197575713a8d/countries-aggregated_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "0c89569a53f7f104c4b2197575713a8d",
+      "mediatype": "text/csv",
+      "name": "countries-aggregated_csv",
+      "path": "data/countries-aggregated_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 143668,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 51669,
+      "datahub": {
+        "derivedFrom": [
+          "key-countries-pivoted"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/key-countries-pivoted_csv/data/3165e494399c2f403ccf6c988305ed58/key-countries-pivoted_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "3165e494399c2f403ccf6c988305ed58",
+      "mediatype": "text/csv",
+      "name": "key-countries-pivoted_csv",
+      "path": "data/key-countries-pivoted_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 733,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "China",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "US",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "United_Kingdom",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Italy",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "France",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Germany",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Spain",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Iran",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 7793257,
+      "datahub": {
+        "derivedFrom": [
+          "time-series-19-covid-combined"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/time-series-19-covid-combined_csv/data/fa48253ddd3d1a34fc1ebfc6c0874a64/time-series-19-covid-combined_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "fa48253ddd3d1a34fc1ebfc6c0874a64",
+      "mediatype": "text/csv",
+      "name": "time-series-19-covid-combined_csv",
+      "path": "data/time-series-19-covid-combined_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 205240,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 408192,
+      "datahub": {
+        "derivedFrom": [
+          "reference"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/reference_csv/data/fc61f393be618536b238257d5b238fe7/reference_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "fc61f393be618536b238257d5b238fe7",
+      "mediatype": "text/csv",
+      "name": "reference_csv",
+      "path": "data/reference_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 4215,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FIPS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province_State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country_Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long_",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 89410360,
+      "datahub": {
+        "derivedFrom": [
+          "us_confirmed"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/us_confirmed_csv/data/ace6e3abd889cab509f7c3b131bbceaa/us_confirmed_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "ace6e3abd889cab509f7c3b131bbceaa",
+      "mediatype": "text/csv",
+      "name": "us_confirmed_csv",
+      "path": "data/us_confirmed_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 2449686,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Case",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 85979710,
+      "datahub": {
+        "derivedFrom": [
+          "us_deaths"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/us_deaths_csv/data/71c6e2dd3d43674708aa3202a7db2333/us_deaths_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "71c6e2dd3d43674708aa3202a7db2333",
+      "mediatype": "text/csv",
+      "name": "us_deaths_csv",
+      "path": "data/us_deaths_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 2449686,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Case",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 39996,
+      "datahub": {
+        "derivedFrom": [
+          "worldwide-aggregate"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/worldwide-aggregate_csv/data/bc1f9fb1355cd88a89af1350aaa6d65a/worldwide-aggregate_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "bc1f9fb1355cd88a89af1350aaa6d65a",
+      "mediatype": "text/csv",
+      "name": "worldwide-aggregate_csv",
+      "path": "data/worldwide-aggregate_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 733,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Increase rate",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 96215039,
+      "datahub": {
+        "derivedFrom": [
+          "us_simplified"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/us_simplified_csv/data/1435d8a7e14de1fca5ce11b1db383515/us_simplified_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "1435d8a7e14de1fca5ce11b1db383515",
+      "mediatype": "text/csv",
+      "name": "us_simplified_csv",
+      "path": "data/us_simplified_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 2449686,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 14239651,
+      "datahub": {
+        "derivedFrom": [
+          "countries-aggregated"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/countries-aggregated_json/data/a356ea17e12ee39ed9199f9fb2aca308/countries-aggregated_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "a356ea17e12ee39ed9199f9fb2aca308",
+      "mediatype": "text/csv",
+      "name": "countries-aggregated_json",
+      "path": "data/countries-aggregated_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 143668,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 124175,
+      "datahub": {
+        "derivedFrom": [
+          "key-countries-pivoted"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/key-countries-pivoted_json/data/0dd33d6f8933547ea5749ea93fbacafc/key-countries-pivoted_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "0dd33d6f8933547ea5749ea93fbacafc",
+      "mediatype": "text/csv",
+      "name": "key-countries-pivoted_json",
+      "path": "data/key-countries-pivoted_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 733,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "China",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "US",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "United_Kingdom",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Italy",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "France",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Germany",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Spain",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Iran",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 27000727,
+      "datahub": {
+        "derivedFrom": [
+          "time-series-19-covid-combined"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/time-series-19-covid-combined_json/data/b2c3ff884596801ff38ceaef89bc5a44/time-series-19-covid-combined_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "b2c3ff884596801ff38ceaef89bc5a44",
+      "mediatype": "text/csv",
+      "name": "time-series-19-covid-combined_json",
+      "path": "data/time-series-19-covid-combined_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 205240,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1071603,
+      "datahub": {
+        "derivedFrom": [
+          "reference"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/reference_json/data/85ced702f34fb72159262525418e39d9/reference_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "85ced702f34fb72159262525418e39d9",
+      "mediatype": "text/csv",
+      "name": "reference_json",
+      "path": "data/reference_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 4215,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "UID",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "iso2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "iso3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "code3",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FIPS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province_State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country_Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Long_",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Combined_Key",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Population",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 273145559,
+      "datahub": {
+        "derivedFrom": [
+          "us_confirmed"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/us_confirmed_json/data/b7aa86e8a38c9ff7b231509599c5f994/us_confirmed_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "b7aa86e8a38c9ff7b231509599c5f994",
+      "mediatype": "text/csv",
+      "name": "us_confirmed_json",
+      "path": "data/us_confirmed_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 2449686,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Case",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 269714909,
+      "datahub": {
+        "derivedFrom": [
+          "us_deaths"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/us_deaths_json/data/8b7544850bd58965b2592b29f50e5df4/us_deaths_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "8b7544850bd58965b2592b29f50e5df4",
+      "mediatype": "text/csv",
+      "name": "us_deaths_json",
+      "path": "data/us_deaths_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 2449686,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Case",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 89798,
+      "datahub": {
+        "derivedFrom": [
+          "worldwide-aggregate"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/worldwide-aggregate_json/data/b1355cc22b4f841a487d9152e8f5ace3/worldwide-aggregate_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "b1355cc22b4f841a487d9152e8f5ace3",
+      "mediatype": "text/csv",
+      "name": "worldwide-aggregate_json",
+      "path": "data/worldwide-aggregate_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 733,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Recovered",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Increase rate",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 319145202,
+      "datahub": {
+        "derivedFrom": [
+          "us_simplified"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpzvshub65/core/covid-19/us_simplified_json/data/bf15f1ab1435f89d699644546cbef72a/us_simplified_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "bf15f1ab1435f89d699644546cbef72a",
+      "mediatype": "text/csv",
+      "name": "us_simplified_json",
+      "path": "data/us_simplified_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 2449686,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "format": "default",
+            "name": "Admin2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Confirmed",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Deaths",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 10701,
+      "dpp:streamedFrom": "/tmp/tmpy_svkbdy/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "Novel Coronavirus 2019",
+  "views": [
+    {
+      "resources": [
+        "worldwide-aggregate"
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Confirmed",
+          "Deaths"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Total world to date"
+    },
+    {
+      "resources": [
+        "key-countries-pivoted"
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "China",
+          "US",
+          "United_Kingdom",
+          "Italy",
+          "France",
+          "Germany",
+          "Spain",
+          "Iran"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Number of confirmed cases in key countries"
+    },
+    {
+      "resources": [
+        {
+          "name": "worldwide-aggregate",
+          "transform": [
+            {
+              "asFields": [
+                "Mortality rate"
+              ],
+              "expressions": [
+                "data['Deaths'] / data['Confirmed'] * 100 + '%'"
+              ],
+              "type": "formula"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Mortality rate"
+        ],
+        "type": "bar"
+      },
+      "specType": "simple",
+      "title": "Mortality rate in percentage"
+    },
+    {
+      "resources": [
+        "worldwide-aggregate"
+      ],
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Increase rate"
+        ],
+        "type": "bar"
+      },
+      "specType": "simple",
+      "title": "Increase rate from previous day in confirmed cases worldwide"
+    }
+  ]
+}
