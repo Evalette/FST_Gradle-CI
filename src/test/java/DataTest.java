@@ -23,7 +23,7 @@ public class DataTest {
 
         String json = dataLoader.loadJsonFile("countries-aggregated_json.json");
         CountryDataPoint[] dataPoints = gson.fromJson(json, CountryDataPoint[].class);
-        //Assert.assertEquals(dataPoints.length, 143668);
-        Assert.assertEquals(dataPoints.length, 42);
+        Assert.assertEquals(dataPoints.length, 143668);
+        //Assert.assertEquals(dataPoints.length, 42);
     }
 }
